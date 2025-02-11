@@ -2,13 +2,13 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect';
 import { SlSocialLinkedin } from "react-icons/sl";
-import { FaGithub } from 'react-icons/fa';
+import { FaGithub, FaWhatsapp } from 'react-icons/fa';
 import { FiFacebook } from "react-icons/fi";
 import Link from 'next/link';
 
 function AboutMeComponent() {
     return (
-        <div className="container p-4" data-aos="fade-down" id='about'>
+        <div className="container p-4 order-1 order-md-2" data-aos="fade-down" id='about'>
             <div className="row">
                 <div className="col-lg-12 ">
                     <h5 >Bienvenue sur mon Porfolio</h5>
@@ -47,7 +47,7 @@ function AboutMeComponent() {
                             </div>
                             <div className="link ">
                                 <a href="https://www.linkedin.com/in/parfait-eric-yao-299635344/" className='fs-5' target='_blank' rel='noopener' title='voir mon linkedin'>
-                                    <FiFacebook />
+                                    <FaWhatsapp />
                                 </a>
                             </div>
                         </div>

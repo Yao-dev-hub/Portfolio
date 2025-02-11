@@ -9,6 +9,7 @@ import ContactComponent from '@/component/ContactComponent';
 import ResumeComponent from '@/component/ResumeComponent';
 import ServicesComponents from '@/component/ServicesComponents';
 import TemoignagesComponent from '@/component/TemoignagesComponent';
+import FooterComponents from '@/component/FooterComponents';
 
 function Page() {
     useEffect(() => {
@@ -29,6 +30,7 @@ function Page() {
                 <ResumeComponent />
                 <TemoignagesComponent />
                 <ContactComponent />
+                <FooterComponents />
             </main>
         </>
 

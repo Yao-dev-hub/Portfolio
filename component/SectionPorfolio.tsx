@@ -25,7 +25,7 @@ function SectionPorfolio() {
             <div className="row g-2 my-3 ">
                 <div className="col-lg-4">
                     <Button onClick={handleShow} variant="white" className='border-0'>
-                        <div className="card card-portfolio">
+                        <div className="card card-portfolio mx-auto">
                             <div className="container-image1"></div>
                             <div className="card-body">
                                 <div className="d-flex justify-content-between align-items-center mb-3">
@@ -40,7 +40,7 @@ function SectionPorfolio() {
                 </div>
                 <div className="col-lg-4">
                     <Button onClick={handleShow} variant="white" className='border-0'>
-                        <div className="card card-portfolio">
+                        <div className="card card-portfolio mx-auto">
                             <div className="container-image1"></div>
                             <div className="card-body">
                                 <div className="d-flex justify-content-between align-items-center mb-3">
@@ -55,7 +55,7 @@ function SectionPorfolio() {
                 </div>
                 <div className="col-lg-4">
                     <Button onClick={handleShow} variant="white" className='border-0'>
-                        <div className="card card-portfolio">
+                        <div className="card card-portfolio mx-auto">
                             <div className="container-image1"></div>
                             <div className="card-body">
                                 <div className="d-flex justify-content-between align-items-center mb-3">

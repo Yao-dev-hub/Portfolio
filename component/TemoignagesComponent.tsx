@@ -1,112 +1,124 @@
-import React from 'react'
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-import Avatar from '@mui/joy/Avatar';
-import Box from '@mui/joy/Box';
-import { Typography } from '@mui/material';
+import React from "react";
+import Slider from "react-slick";
+import Avatar from "@mui/joy/Avatar";
+import Box from "@mui/joy/Box";
+import { Card, CardContent, Typography } from "@mui/material";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const testimonials = [
+    {
+        name: "John Doe",
+        feedback: "Excellent travail, très satisfait de la prestation.",
+        role: "Client",
+    },
+    {
+        name: "Jane Smith",
+        feedback:
+            "Un service incroyable, je recommande vivement. Je suis très content de cette expérience, merci beaucoup !",
+        role: "Partenaire",
+    },
+    {
+        name: "Alice Brown",
+        feedback: "Rapide, efficace et très professionnel.",
+        role: "Utilisateur",
+    },
+    {
+        name: "Michael Johnson",
+        feedback: "Service parfait, je suis ravi !",
+        role: "Client fidèle",
+    },
+];
 
 function TemoignagesComponent() {
-
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
-        },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
-        },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
-        },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
-        }
+    const settings = {
+        dots: true, // Affiche les points de navigation
+        infinite: true, // Boucle infinie
+        speed: 500, // Vitesse de transition en ms
+        slidesToShow: 3, // Nombre de slides affichés
+        slidesToScroll: 1, // Nombre de slides à faire défiler
+        autoplay: true, // Active l'autoplay
+        autoplaySpeed: 3000, // Durée entre chaque slide
+        responsive: [
+            {
+                breakpoint: 1024, // Pour les écrans de taille tablette
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 600, // Pour les écrans de taille mobile
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     };
 
-
-
     return (
-        <div className='container p-3' id="temoignage">
-            <h2 className='text-center'>Témoignages</h2>
-            <div className="row  mx-auto">
-                <Carousel
-                    responsive={responsive}
-                    infinite={true}
-                    autoPlaySpeed={1000}
-                    keyBoardControl={true}
-                    customTransition="all .5s"
-                    transitionDuration={500}
-                    containerClass="carousel-container mx-auto"
-                    removeArrowOnDeviceType={["tablet", "mobile"]}
-                    dotListClass="style-de-liste-de-points-personnalisé"
-                    itemClass="carousel-item-padding-40-px"
-                    swipeable={false}
-                    draggable={false}
-                    showDots={true}
+        <div className="container-fluid p-3" id="temoignage">
+            <h2 className="text-center text-white">Témoignages</h2>
+            <div className="row">
+                <Box
+                    sx={{
+                        maxWidth: "90%",
+                        mx: "auto",
+                        mt: 4,
+                    }}
                 >
-                    <div className="col-lg-3 w-75 ">
-                        <div className='card p-3'>
-                            <Box sx={{ display: 'flex', gap: 2, marginLeft: "12px" }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <div className="row">
-                                    <Typography>Koffi Chris Franck</Typography>
-                                    <p><sub>Professeur de maths</sub></p>
-                                </div>
-                            </Box>
-                            <div className="card-body">
-                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa provident beatae, dolorum voluptas maiores!</h6>
+                    <Slider {...settings}>
+                        {testimonials.map((testimonial, index) => (
+                            <div key={index} style={{ padding: "0 10px" }}>{/* Espace entre les slides */}
+
+                                <Card
+                                    key={index}
+                                    sx={{
+                                        p: 2,
+                                        textAlign: "center",
+                                        m: 1,
+                                        minHeight: 250, // Fixe une hauteur minimale
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        justifyContent: "space-between", // Distribution des éléments
+                                    }}
+                                    className="h-100"
+                                >
+                                    <CardContent>
+                                        <Avatar
+                                            alt={testimonial.name}
+                                            src="/path/to/avatar" // Ajouter un chemin à une image si nécessaire
+                                            sx={{ mx: "auto", mb: 2 }}
+                                        />
+                                        <Typography variant="h6" fontWeight="bold">
+                                            {testimonial.name}
+                                        </Typography>
+                                        <Typography variant="body2" sx={{ mt: 1, mb: 2 }}>
+                                            {testimonial.role}
+                                        </Typography>
+                                        <Typography
+                                            variant="body1"
+                                            sx={{
+                                                fontStyle: "italic",
+                                                overflow: "hidden", // Coupe le texte trop long
+                                                textOverflow: "ellipsis",
+                                                display: "-webkit-box",
+                                                WebkitLineClamp: 2, // Limite à 3 lignes
+                                                WebkitBoxOrient: "vertical",
+                                            }}
+                                        >
+                                            "{testimonial.feedback}"
+                                        </Typography>
+                                    </CardContent>
+                                </Card>
+
                             </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3  w-75">
-                        <div className='card p-3'>
-                            <Box sx={{ display: 'flex', gap: 2, marginLeft: "12px" }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <div className="row">
-                                    <Typography>Koffi Chris Franck</Typography>
-                                    <p><sub>Professeur de maths</sub></p>
-                                </div>
-                            </Box>
-                            <div className="card-body">
-                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa provident beatae, dolorum voluptas maiores!</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3  w-75">
-                        <div className='card p-3'>
-                            <Box sx={{ display: 'flex', gap: 2, marginLeft: "12px" }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <div className="row">
-                                    <Typography>Koffi Chris Franck</Typography>
-                                    <p><sub>Professeur de maths</sub></p>
-                                </div>
-                            </Box>
-                            <div className="card-body">
-                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa provident beatae, dolorum voluptas maiores!</h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-3  w-75">
-                        <div className='card p-3'>
-                            <Box sx={{ display: 'flex', gap: 2, marginLeft: "12px" }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-                                <div className="row">
-                                    <Typography>Koffi Chris Franck</Typography>
-                                    <p><sub>Professeur de maths</sub></p>
-                                </div>
-                            </Box>
-                            <div className="card-body">
-                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa provident beatae, dolorum voluptas maiores!</h6>
-                            </div>
-                        </div>
-                    </div>
-                </Carousel>
+                        ))}
+                    </Slider>
+
+                </Box>
             </div>
         </div>
-    )
+    );
 }
 
-export default TemoignagesComponent
+export default TemoignagesComponent;

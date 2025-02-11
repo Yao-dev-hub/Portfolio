@@ -71,6 +71,7 @@
   padding: 30px;
   border: 1px solid #cdcdcd4f;
   box-shadow: 0 0 10px #e3e3e3a4;
+  width: 380px;
 }
 
 .container-image1 {
@@ -78,8 +79,8 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 350px;
-  height: 280px;
+  width: 100%;
+  height: 250px;
   border-radius: 9px;
   transition: all 0.8s ease;
 }
@@ -120,15 +121,16 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 400px;
+  width: 100%;
   height: 280px;
   border-radius: 9px;
   transition: all 0.8s ease;
 }
 
 .text-moyen {
-  font-weight: 400;
-  margin-top: 30px;
+  font-weight: 500;
+  margin-top: 25px;
+  font-size: 20px;
 }
 
 #commentaire {
@@ -190,4 +192,17 @@
   box-shadow: 0 0 20px #86868651;
   transform: scale(1.01);
   transform: translateY(-10px);
+}
+
+/* Style temoignages */
+
+#temoignage {
+  background: #a6a6a646;
+  padding: 40px;
+}
+
+
+/* Style footer */
+#footer {
+  height: 350px;
 }

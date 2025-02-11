@@ -7,7 +7,7 @@ function ServicesComponents() {
         <div className='container mt-5 p-3' id='service'>
             <h2 className='text-center mb-5'>Mes services</h2>
             <div className="row g-3">
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service  h-100">
                         <h1 className='icon-service '>
                             <FaLaptopCode />
@@ -20,7 +20,7 @@ function ServicesComponents() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service  h-100">
                         <h1 className='icon-service '>
                             <IoServerSharp />
@@ -33,7 +33,7 @@ function ServicesComponents() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service h-100">
                         <h1 className='icon-service '>
                             <FaFire />
@@ -49,7 +49,7 @@ function ServicesComponents() {
                     </div>
                 </div>
                 <div className="col-lg-3" data-aos="zoom-in">
-                    <div className="card card-service  h-100">
+                    <div className="card card-service  h-100" data-aos-duration="1200">
                         <h1 className='icon-service '>
                             <FaShoppingCart />
                         </h1>
@@ -60,7 +60,7 @@ function ServicesComponents() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service h-100">
                         <h1 className='icon-service '>
                             <FaMobileAlt />
@@ -72,7 +72,7 @@ function ServicesComponents() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service h-100">
                         <h1 className='icon-service '>
                             <FaCode />
@@ -84,7 +84,7 @@ function ServicesComponents() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service h-100">
                         <h1 className='icon-service '>
                             <FaRocket />
@@ -98,7 +98,7 @@ function ServicesComponents() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3" data-aos="zoom-in">
+                <div className="col-lg-3" data-aos="zoom-in" data-aos-duration="1200">
                     <div className="card card-service">
                         <h1 className='icon-service '>
                             <FaBriefcase />

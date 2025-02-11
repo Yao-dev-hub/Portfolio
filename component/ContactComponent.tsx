@@ -1,6 +1,13 @@
 import React from 'react'
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
+import Avatar from '@mui/material/Avatar';
+import Stack from '@mui/material/Stack';
+import { Typography } from '@mui/material';
+import { FaGithub, FaWhatsapp } from 'react-icons/fa';
+import { SlSocialLinkedin } from 'react-icons/sl';
+
+
 function ContactComponent() {
     return (
         <div className='container-fluid mt-5 p-3'>
@@ -10,12 +17,38 @@ function ContactComponent() {
                     <div className="card card-contact mx-auto">
                         <div id="img-contact" className='mx-auto'></div>
                         <div className="card-body">
-                            <h6 className='fw-bold h3'> Yao Parfait Eric</h6>
-                            <p className='h5 text-moyen'>Développeur d'application web et mobile</p>
-                            <p className='h5 text-moyen'>Je suis disponible pour des travaux en freelance. Contactez-moi ou appelez sur mon compte.</p>
-                            <p className='h5 text-moyen'>Téléphone : +225 05 75 15 49 75</p>
-                            <p className='h5 text-moyen'>Courriel : ericyaodev@gmail.com</p>
-                            <p className='h5 text-moyen'>TROUVEZ AVEC MOI</p>
+                            <Stack direction="row" spacing={2}>
+                                <Avatar alt="Remy Sharp" src="/images/me.jpg" />
+                                <Typography variant="h6">
+                                    Yao Parfait Eric
+                                </Typography>
+                            </Stack>
+                            <p className='text-moyen'>Développeur d'application web et mobile</p>
+                            <p className='text-moyen'>Je suis disponible pour des travaux en freelance.</p>
+                            <p className='text-moyen'>Téléphone : +225 05 75 15 49 75</p>
+                            <p className='text-moyen'>Courriel : ericyaodev@gmail.com</p>
+                            <p className='text-moyen'>TROUVEZ AVEC MOI</p>
+
+                            <div className="row mt-3">
+                                <div className="col-lg-4 d-flex ">
+                                    <div className="link">
+                                        <a href="https://www.linkedin.com/in/parfait-eric-yao-299635344/" className='fs-5 p-4' target='_blank' rel='noopener' title='voir mon linkedin'>
+                                            <SlSocialLinkedin />
+                                        </a>
+                                    </div>
+                                    <div className="link mx-3">
+                                        <a href="https://www.linkedin.com/in/parfait-eric-yao-299635344/" className='fs-5 p-4' target='_blank' rel='noopener' title='voir mon linkedin'>
+                                            <FaGithub />
+                                        </a>
+                                    </div>
+                                    <div className="link ">
+                                        <a href="https://www.linkedin.com/in/parfait-eric-yao-299635344/" className='fs-5 p-4' target='_blank' rel='noopener' title='voir mon linkedin'>
+                                            <FaWhatsapp />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
