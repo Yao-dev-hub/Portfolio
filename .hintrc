@@ -4,6 +4,35 @@
   ],
   "hints": {
     "typescript-config/consistent-casing": "off",
-    "axe/language": "off"
+    "axe/language": "off",
+    "no-inline-styles": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-progressbar-name": "off"
+      }
+    ],
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "link[fetchpriority]"
+        ]
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "color-adjust"
+        ]
+      }
+    ]
   }
 }

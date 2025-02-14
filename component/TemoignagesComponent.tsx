@@ -68,7 +68,7 @@ function TemoignagesComponent() {
                 >
                     <Slider {...settings}>
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} style={{ padding: "0 10px" }}>{/* Espace entre les slides */}
+                            <div key={index} id="sildes">{/* Espace entre les slides */}
 
                                 <Card
                                     key={index}
