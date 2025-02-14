@@ -4,16 +4,16 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 function SectionFonction() {
     return (
         <>
-            <div className='container mt-5' id='competences' >
-                <h2 className='fw-bold  text-center my-5' data-aos="zoom-in">Mes compétences sur divers outils</h2>
+            <div className='container ' id='competences' >
+                <h2 className='fw-bold  text-center mb-3' data-aos="zoom-in">Mes compétences sur divers outils</h2>
                 <div className="row text-center gap-3 justify-content-center align-items-center mobile-responsive">
                     <div className="row justify-content-between" data-aos="fade-up">
                         <div className="col-lg-5">
                             <h6 className="text-start mt-3">React JS</h6>
-                            <ProgressBar now={60} label="70%" animated />
+                            <ProgressBar now={80} label="80%" animated />
 
                             <h6 className="text-start mt-3">Next JS</h6>
-                            <ProgressBar now={80} label="80%" animated />
+                            <ProgressBar now={75} label="75%" animated />
 
                             <h6 className="text-start mt-3">Bootstrap</h6>
                             <ProgressBar now={85} label="85%" animated />
@@ -29,7 +29,7 @@ function SectionFonction() {
                         </div>
                         <div className="col-lg-5" data-aos="fade-up">
                             <h6 className="text-start mt-3">TypeScript</h6>
-                            <ProgressBar now={60} label="70%" animated />
+                            <ProgressBar now={75} label="75%" animated />
 
                             <h6 className="text-start mt-3">JavaScript</h6>
                             <ProgressBar now={83} label="83%" animated />

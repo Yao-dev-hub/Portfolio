@@ -6,8 +6,6 @@ function SectionPhoto() {
             <div className="container" id='photo-container'></div>
             <div id='photo-right'></div>
         </div>
-
-
     )
 }
 

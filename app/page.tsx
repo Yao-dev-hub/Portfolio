@@ -11,6 +11,7 @@ import ServicesComponents from '@/component/ServicesComponents';
 import TemoignagesComponent from '@/component/TemoignagesComponent';
 import FooterComponents from '@/component/FooterComponents';
 
+
 function Page() {
     useEffect(() => {
         AOS.init({
@@ -22,11 +23,11 @@ function Page() {
     }, [])
     return (
         <>
-            <main className='container mt-5'>
+            <main className='container mt-5' id='particles-js'>
                 <HeroSection />
                 <SectionFonction />
                 <ServicesComponents />
-                <SectionPorfolio />
+                {/* <SectionPorfolio /> */}
                 <ResumeComponent />
                 <TemoignagesComponent />
                 <ContactComponent />

@@ -20,7 +20,6 @@
     "bootstrap": "^5.3.3",
     "flowbite-react": "^0.10.2",
     "next": "15.1.5",
-    "primereact": "^10.9.2",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.8",
     "react-countup": "^6.5.3",
@@ -31,6 +30,8 @@
     "react-typewriter-effect": "^1.1.0",
     "react-typing-effect": "^2.0.5",
     "slick-carousel": "^1.8.1",
+    "tsparticles": "^3.8.1",
+    "tsparticles-engine": "^2.12.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
