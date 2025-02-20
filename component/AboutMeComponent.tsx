@@ -55,7 +55,7 @@ function AboutMeComponent() {
                             <hr />
                         </div>
                         <div className="col-lg-4">
-                            <Link href="#" className='btn btn-success p-2 fw-bold text-center'>Telecharger mon CV</Link>
+                            <Link href="/images/parfait-cv.pdf" className='btn btn-success p-2 fw-bold text-center'>Telecharger mon CV</Link>
                         </div>
                     </div>
                 </div>
