@@ -34,9 +34,7 @@ function NavbarSite() {
                                 <Nav.Link href="/">Accueil</Nav.Link>
                                 <Nav.Link href="#about">A propos</Nav.Link>
                                 <Nav.Link href="#competences">Compétences</Nav.Link>
-                                {/* <Nav.Link href="#portfolio">Portfolio</Nav.Link> */}
                                 <Nav.Link href="#cv">CV</Nav.Link>
-                                <Nav.Link href="#blog">Blog</Nav.Link>
                                 <Nav.Link href="#contact">Contacts</Nav.Link>
                             </Nav>
 

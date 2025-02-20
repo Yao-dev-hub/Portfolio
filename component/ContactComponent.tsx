@@ -10,7 +10,7 @@ import { SlSocialLinkedin } from 'react-icons/sl';
 
 function ContactComponent() {
     return (
-        <div className='container-fluid mt-5 p-3'>
+        <div className='container-fluid mt-5 p-3' id="contact">
             <h2 className='text-center fw-bold'>Contactez-moi</h2>
             <div className="row justify-content-between gap-2 p-5">
                 <div className="col-lg-5 d-flex justify-content-center align-items-center">
